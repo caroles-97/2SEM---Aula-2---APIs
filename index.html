@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja Exemplo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="topo">
+    <h1>Fake Store</h1>
+    <p class="subtitulo">Consumindo APIs</p>
+  </header>
+
+  <main>
+
+    <!--
+      Cada <section> abaixo representa uma categoria fixa.
+      O id do "grid-*" é onde vocês vão injetar o innerHTML
+      com o resultado de filter + map.
+    -->
+
+    <section class="categoria">
+      <h2>Categoria: xxxxxxxxxx </h2>
+      <div class="grid" id="grid-categoria">
+        <p class="placeholder">Carregando produtos...</p>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2>Mais Baratos (abaixo de R$ 50)</h2>
+      <div class="grid" id="grid-baratos">
+        <p class="placeholder">Carregando produtos...</p>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h2> Melhor avaliados (acima de 4.5 estrelas)</h2>
+      <div class="grid" id="grid-faixa-preco">
+        <p class="placeholder">Carregando produtos...</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
